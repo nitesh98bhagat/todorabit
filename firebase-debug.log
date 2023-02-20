@@ -1,0 +1,104 @@
+[debug] [2023-02-20T11:37:52.635Z] ----------------------------------------------------------------------
+[debug] [2023-02-20T11:37:52.639Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\NITESH BHAGAT\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-20T11:37:52.640Z] CLI Version:   11.23.1
+[debug] [2023-02-20T11:37:52.640Z] Platform:      win32
+[debug] [2023-02-20T11:37:52.640Z] Node Version:  v16.15.1
+[debug] [2023-02-20T11:37:52.642Z] Time:          Mon Feb 20 2023 17:07:52 GMT+0530 (India Standard Time)
+[debug] [2023-02-20T11:37:52.642Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-20T11:37:52.657Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-20T11:37:52.658Z] > authorizing via signed-in user (nitshbhgt1998@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\NITESH BHAGAT\Desktop\reactProjects\react_tutorial
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-20T11:38:32.830Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-02-20T11:38:33.744Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-02-20T11:38:33.745Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project todorabit (TodoRabit) 
+[info] 
+=== Firestore Setup
+[debug] [2023-02-20T11:38:38.145Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/todorabit/services/firestore.googleapis.com [none]
+[debug] [2023-02-20T11:38:38.145Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/todorabit/services/firestore.googleapis.com x-goog-quota-user=projects/todorabit
+[debug] [2023-02-20T11:38:40.237Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/todorabit/services/firestore.googleapis.com 200
+[debug] [2023-02-20T11:38:40.237Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/todorabit/services/firestore.googleapis.com [omitted]
+[debug] [2023-02-20T11:38:40.239Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default) [none]
+[debug] [2023-02-20T11:38:40.606Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default) 200
+[debug] [2023-02-20T11:38:40.607Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default) {"name":"projects/todorabit/databases/(default)","uid":"9f55f765-5831-43ba-923c-f861c3e223b5","createTime":"2023-02-19T16:41:44.311648Z","updateTime":"2023-02-19T16:41:44.311648Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","etag":"IL/w6taBpP0CMODGlsaDov0C"}
+[debug] [2023-02-20T11:38:40.607Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-02-20T11:38:40.608Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-20T11:38:40.609Z] > authorizing via signed-in user (nitshbhgt1998@gmail.com)
+[debug] [2023-02-20T11:38:40.609Z] [iam] checking project todorabit for permissions ["firebase.projects.get"]
+[debug] [2023-02-20T11:38:40.611Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todorabit:testIamPermissions [none]
+[debug] [2023-02-20T11:38:40.612Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todorabit:testIamPermissions x-goog-quota-user=projects/todorabit
+[debug] [2023-02-20T11:38:40.612Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todorabit:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-02-20T11:38:41.202Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todorabit:testIamPermissions 200
+[debug] [2023-02-20T11:38:41.203Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todorabit:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-02-20T11:38:51.040Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/todorabit/releases pageSize=10&pageToken=
+[debug] [2023-02-20T11:38:52.791Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/todorabit/releases 200
+[debug] [2023-02-20T11:38:52.792Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/todorabit/releases {"releases":[{"name":"projects/todorabit/releases/cloud.firestore","rulesetName":"projects/todorabit/rulesets/24dc22ce-be0b-4176-9c21-1784445cbf37","createTime":"2023-02-19T16:41:54.352701Z","updateTime":"2023-02-19T16:41:54.352701Z"}]}
+[debug] [2023-02-20T11:38:52.793Z] Found ruleset: projects/todorabit/rulesets/24dc22ce-be0b-4176-9c21-1784445cbf37
+[debug] [2023-02-20T11:38:52.794Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/todorabit/rulesets/24dc22ce-be0b-4176-9c21-1784445cbf37 [none]
+[debug] [2023-02-20T11:38:54.356Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/todorabit/rulesets/24dc22ce-be0b-4176-9c21-1784445cbf37 200
+[debug] [2023-02-20T11:38:54.356Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/todorabit/rulesets/24dc22ce-be0b-4176-9c21-1784445cbf37 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-02-20T11:39:20.064Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-02-20T11:39:20.068Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-02-20T11:39:20.428Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-02-20T11:39:20.428Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-02-20T11:39:20.999Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-02-20T11:39:20.999Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/todorabit/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/todorabit/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2023-02-20T11:43:38.137Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-02-20T11:43:38.834Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-02-20T11:43:38.834Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.17.1","browserURL":"https://www.gstatic.com/firebasejs/9.17.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.17.1/firebase.tgz"},"live":{"version":"9.17","browserURL":"https://www.gstatic.com/firebasejs/live/9.17/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.17/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.17.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.17.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.17.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.17.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.17.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.17.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.17.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.17.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.17.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.17.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.17.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\NITESH BHAGAT\Desktop\reactProjects\react_tutorial 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1122866&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-02-20T11:43:53.204Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-02-20T11:43:53.205Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-02-20T11:43:53.690Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-02-20T11:43:53.691Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-02-20T11:43:53.705Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-02-20T11:43:54.224Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-02-20T11:43:54.225Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"nitesh98bhagat","id":39165693,"node_id":"MDQ6VXNlcjM5MTY1Njkz","avatar_url":"https://avatars.githubusercontent.com/u/39165693?v=4","gravatar_id":"","url":"https://api.github.com/users/nitesh98bhagat","html_url":"https://github.com/nitesh98bhagat","followers_url":"https://api.github.com/users/nitesh98bhagat/followers","following_url":"https://api.github.com/users/nitesh98bhagat/following{/other_user}","gists_url":"https://api.github.com/users/nitesh98bhagat/gists{/gist_id}","starred_url":"https://api.github.com/users/nitesh98bhagat/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/nitesh98bhagat/subscriptions","organizations_url":"https://api.github.com/users/nitesh98bhagat/orgs","repos_url":"https://api.github.com/users/nitesh98bhagat/repos","events_url":"https://api.github.com/users/nitesh98bhagat/events{/privacy}","received_events_url":"https://api.github.com/users/nitesh98bhagat/received_events","type":"User","site_admin":false,"name":"Nitesh Bhagat","company":"Student","blog":"","location":"Kolkata","email":null,"hireable":null,"bio":"Just an geeky developer with alot of Curiosity in my mind.","twitter_username":"myself_nitesh","public_repos":18,"public_gists":0,"followers":1,"following":8,"created_at":"2018-05-10T16:14:50Z","updated_at":"2023-02-20T11:43:47Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":13358,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as nitesh98bhagat 
+[info] 
